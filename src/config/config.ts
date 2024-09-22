@@ -3,9 +3,11 @@ import dotenvFlow from 'dotenv-flow'
 dotenvFlow.config()
 
 export default {
-    ENV: process.env.ENV || 'development',
-    PORT: process.env.PORT || 3000,
-    SERVER_URL: process.env.SERVER_URL || 'http://localhost:3000',
+    // General
+    ENV: process.env.ENV,
+    PORT: process.env.PORT,
+    SERVER_URL: process.env.SERVER_URL,
 
-    DTABASE_URL: process.env.DTABASE_URL,
+    // Database
+    DATABASE_URL: process.env.DATABASE_URL
 }
